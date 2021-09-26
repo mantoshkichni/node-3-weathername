@@ -3,7 +3,7 @@ const hbs=require('hbs');
 const path=require('path');
 const geocode=require('../utils/app.js')
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const viewpath=path.join(__dirname,'../templates/views')
 const publidir=path.join(__dirname,'../public')
